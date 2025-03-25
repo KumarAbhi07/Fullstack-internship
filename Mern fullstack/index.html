@@ -3,118 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Tasks</title>
+    <title>Assignment Dashboard</title>
     <style>
         body {
-    font-family: Arial, sans-serif;
-    background-color:darkgray;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-}
-
-.container {
-    width: 80%;
-    margin: 20px auto;
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-header {
-    background: #ff7300;
-    color: white;
-    padding: 20px;
-    border-radius: 8px 8px 0 0;
-}
-
-header a {
-    color: dark orangered;
-    text-decoration: none;
-}
-
-.task-section {
-    margin-top: 20px;
-}
-
-h2 {
-    color: #333;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-ul li {
-    margin: 8px 0;
-}
-
-ul li a {
-    text-decoration: none;
-    color: #007bff;
-    font-weight: bold;
-    padding: 8px;
-    display: inline-block;
-}
-
-ul li a:hover {
-    color: white;
-    background: #007bff;
-    padding: 8px;
-    border-radius: 4px;
-}
-
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #2c3e50, #4ca1af);
+            color: white;
+            text-align: center;
+        }
+        .header {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .assignment {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s, background 0.3s;
+        }
+        .assignment:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.2);
+        }
+        h2 {
+            color: #f1f1f1;
+        }
+        .task-list {
+            list-style: none;
+            padding: 0;
+        }
+        .task-list li {
+            margin: 10px 0;
+        }
+        .task-list a {
+            text-decoration: none;
+            color: white;
+            background: #ff9800;
+            padding: 12px 18px;
+            border-radius: 8px;
+            display: inline-block;
+            transition: background 0.3s;
+        }
+        .task-list a:hover {
+            background: #ff5722;
+        }
     </style>
 </head>
 <body>
+    <div class="header">
+        Assignment Dashboard <br>
+        Name: Abhimanyu Kumar | Registration No:22BCE10558
+    </div>
     <div class="container">
-        <header>
-            <h1>Abhimanyu Kumar</h1>
-            <p>Email: <a href="mailto:abhimanyukumar2022@vitbhopal.ac.in">abhimanyukumar2022@vitbhopal.ac.in</a></p>
-            <p>Reg No: 22BCE10558</p>
-        </header>
+        <div class="assignment">
+            <h2>Assignment 1 - HTML</h2>
+            <ul class="task-list">
+                <li><a href="https://kumarabhi07.github.io/Fullstack-internship/Mern%20fullstack/HTML/Task1.html" target="_blank">Task 1</a></li>
+                <li><a href="https://kumarabhi07.github.io/Fullstack-internship/Mern%20fullstack/HTML/Task2.html" target="_blank">Task 2</a></li>
+                <li><a href="https://kumarabhi07.github.io/Fullstack-internship/Mern%20fullstack/HTML/Task3.html" target="_blank">Task 3</a></li>
+                <li><a href="https://kumarabhi07.github.io/Fullstack-internship/Mern%20fullstack/HTML/Task4.html" target="_blank">Task 4</a></li>
+                <li><a href="https://kumarabhi07.github.io/Fullstack-internship/Mern%20fullstack/HTML/Task5.html" target="_blank">Task 5</a></li>
 
-        <main>
-            <section class="task-section">
-                <h2>HTML Tasks</h2>
-                <ul>
-                    <li><a href="https://kumarabhi07.github.io/Fullstack-internship/Mern%20fullstack/HTML/Task1.html" target="_blank">Task 1</a></li>
-                    <li><a href="https://kumarabhi07.github.io/Fullstack-internship/Mern%20fullstack/HTML/Task2.html" target="_blank">Task 2</a></li>
-                    <li><a href="https://kumarabhi07.github.io/Fullstack-internship/Mern%20fullstack/HTML/Task3.html" target="_blank">Task 3</a></li>
-                    <li><a href="https://kumarabhi07.github.io/Fullstack-internship/Mern%20fullstack/HTML/Task4.html" target="_blank">Task 4</a></li>
-                    <li><a href="https://kumarabhi07.github.io/Fullstack-internship/Mern%20fullstack/HTML/Task5.html" target="_blank">Task 5</a></li>
-                    
-                </ul>
-            </section>
-
-            <section class="task-section">
-                <h2>CSS Tasks</h2>  
-                  <ul>
-                    <li><a href="https://kumarabhi07.github.io/Fullstack-internship/Mern%20fullstack/CSS/Task1.html" target="_blank">Task 1</a></li>
-                    <li><a href="https://kumarabhi07.github.io/Fullstack-internship/Mern%20fullstack/CSS/Task2.html" target="_blank">Task 2</a></li>
-                    <li><a href="https://kumarabhi07.github.io/Fullstack-internship/Mern%20fullstack/CSS/Task3.html" target="_blank">Task 3</a></li>
-                    <li><a href="https://kumarabhi07.github.io/Fullstack-internship/Mern%20fullstack/CSS/Task4.html" target="_blank">Task 4</a></li>
-                    <li><a href="https://kumarabhi07.github.io/Fullstack-internship/Mern%20fullstack/CSS/Task5.html" target="_blank">Task 5</a></li>
-                    <li><a href="https://kumarabhi07.github.io/Fullstack-internship/Mern%20fullstack/CSS/Task6.html" target="_blank">Task 6</a></li>
-                    <li><a href="https://kumarabhi07.github.io/Fullstack-internship/Mern%20fullstack/CSS/Task7.html" target="_blank">Task 7</a></li>
-                </ul>
-            </section>
-
-            <section class="task-section">
-                <h2>Bootstrap Tasks</h2>
-                <ul>
-                    <li><a href="https://kumarabhi07.github.io/Fullstack-internship/Mern%20fullstack/Bootstrap/Task 1.html" target="_blank">Task 1</a></li>
-                    <li><a href="https://kumarabhi07.github.io/Fullstack-internship/Mern%20fullstack/Bootstrap/Task 2.html" target="_blank">Task 2</a></li>
-                    <li><a href="https://kumarabhi07.github.io/Fullstack-internship/Mern%20fullstack/Bootstrap/Task 3.html" target="_blank">Task 3</a></li>
-                    <li><a href="https://kumarabhi07.github.io/Fullstack-internship/Mern%20fullstack/Bootstrap/Task 4.html" target="_blank">Task 4</a></li>
-                    <li><a href="https://kumarabhi07.github.io/Fullstack-internship/Mern%20fullstack/Bootstrap/Task 5.html" target="_blank">Task 5</a></li>
-                    <li><a href="https://kumarabhi07.github.io/Fullstack-internship/Mern%20fullstack/Bootstrap/Task 6.html" target="_blank">Task 6</a></li>
-                    
-                </ul>
-            </section>
-        </main>
+            </ul>
+        </div>
+        <div class="assignment">
+            <h2>Assignment 1 - CSS</h2>
+            <ul class="task-list">
+                <li><a href="https://kumarabhi07.github.io/Fullstack-internship/Mern%20fullstack/CSS/Task1.html" target="_blank">Task 1</a></li>
+                <li><a href="https://kumarabhi07.github.io/Fullstack-internship/Mern%20fullstack/CSS/Task2.html" target="_blank">Task 2</a></li>
+                <li><a href="https://kumarabhi07.github.io/Fullstack-internship/Mern%20fullstack/CSS/Task3.html" target="_blank">Task 3</a></li>
+                <li><a href="https://kumarabhi07.github.io/Fullstack-internship/Mern%20fullstack/CSS/Task4.html" target="_blank">Task 4</a></li>
+                <li><a href="https://kumarabhi07.github.io/Fullstack-internship/Mern%20fullstack/CSS/Task5.html" target="_blank">Task 5</a></li>
+                <li><a href="https://kumarabhi07.github.io/Fullstack-internship/Mern%20fullstack/CSS/Task6.html" target="_blank">Task 6</a></li>
+                <li><a href="https://kumarabhi07.github.io/Fullstack-internship/Mern%20fullstack/CSS/Task7.html" target="_blank">Task 7</a></li>
+            </ul>
+        </div>
+        <div class="assignment">
+            <h2>Assignment 2 - JavaScript</h2>
+            <ul class="task-list">
+                <li><a href="https://github.com/KumarAbhi07/Fullstack-internship.git/JavaScript/Task 1.js">Task 1</a></li>
+                <li><a href="https://github.com/KumarAbhi07/Fullstack-internship.git/JavaScript/Task 2.js">Task 2</a></li>
+                <li><a href="https://github.com/KumarAbhi07/Fullstack-internship.git/JavaScript/Task 3.html">Task 3</a></li>
+                <li><a href="https://github.com/KumarAbhi07/Fullstack-internship.git/JavaScript/Task 4.html">Task 4</a></li>
+                <li><a href="https://github.com/KumarAbhi07/Fullstack-internship.git/JavaScript/Task 5.html">Task 5</a></li>
+                <li><a href="https://github.com/KumarAbhi07/Fullstack-internship.git/JavaScript/Task 6.html">Task 6</a></li>
+                <li><a href="https://github.com/KumarAbhi07/Fullstack-internship.git/JavaScript/Task 7.html">Task 7</a></li>
+                <li><a href="https://github.com/KumarAbhi07/Fullstack-internship.git/JavaScript/Task 8.html">Task 8</a></li>
+                <li><a href="https://github.com/KumarAbhi07/Fullstack-internship.git/JavaScript/Task 9/index.html">Task 9</a></li>
+            </ul>
+        </div>
     </div>
 </body>
 </html>
